@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <!-- page title -->
+    <div class="bgPrimary m1">
+        <h1> TITLE </h1>
+    
+    
+    
+    <div class="bgDark m0"> 
+        <h2> <strong> edjbcuebfyschjbd</strong></h2>
+
+        <div class="bgDark2 m2 " >
+            <h3> ncdbdjsdbjbsdbvjdgvughbchsgfvbjgfuwegfidshcuguwbjasgfjbdugjabjegrwbugrwnjcnbjvidjihjbish</h3>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    </div>
+     
+    
+</body>
+</html>
+
+
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext">1/5</div>
+        <img src="../IMAGES/1.jpeg" style="width: 100%;" alt="">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2/5</div>
+        <img src="../IMAGES/2.jpeg" style="width: 100%;" alt="">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3/5</div>
+        <img src="../IMAGES/3.jpeg" style="width: 100%;" alt="">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4/5</div>
+        <img src="../IMAGES/4.jpeg" style="width: 100%;" alt="">
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5/5</div>
+        <img src="../IMAGES/5.jpeg" style="width: 100%;" alt="">
+    </div>
+
+    
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+}
+</script>

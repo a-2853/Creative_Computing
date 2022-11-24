@@ -1,0 +1,59 @@
+.top-left{
+    position: absolute;
+    top: 28px;
+    left: 32px;
+    font-size: xx-large;
+}
+.top-right{
+    position: absolute;
+    top: 42px;
+    right: 480px;
+    font-size: x-large;
+}
+.r1 {
+    position: absolute;
+    top: 42px;
+    right: 280px;
+    font-size: x-large;
+
+}
+.r2 {
+    position: absolute;
+    top: 32px;
+    right: 80px;
+    font-size: x-large;
+    border: 1px solid black;
+    padding: 8px;
+
+}
+.center{
+    position: absolute;
+    top: 375px;
+    left:550px;
+    font-size: 100px;
+
+}
+.c1{
+   top: 425px;
+   left: 500px;
+   font-size: medium;
+}
+.column {
+    float: center;
+    width: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

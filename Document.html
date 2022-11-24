@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/style 1.css">
+</head>
+<body>
+
+    <div>
+        <div class="header"></div>
+
+        <div class="top-left"> vipp</div>
+        <div class="center"> OUR HOTEL</div>
+        <div class="c1 "> ABOUT</div>
+        <div class="c2"> STORIES</div>
+        <div class="c3"> CONTACT </div>
+        <div class="top-right, text-block"> MAKE A RESERVATION </div>
+        <div class="c4"> An untraditional hotel</div>
+        <div class="c5"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+        <div class="c7">  
+            uscipit, voluptatum distinctio in laudantium et magni fu
+        </div>
+        <div class="c6"> ABOUT THE VIPP HOTEL</div>
+
+
+    </div>
+
+    <div class="h2">
+
+        <div class="c8"> A self-service concept</div>
+        <div class="c9"> 
+            The Vipp Hotel is a self-service concept.Our hotel is not ordinary,
+        </div>
+        <div class="c10"> 
+            and instead of one location with identical rooms and a continental
+        </div>
+        <div class="c11">
+            breakfast,we offer experiences and essentials.
+        </div>
+
+
+    </div>
+    <div class="row">
+
+
+        <div class="col1">
+            <div class="text"> 
+                EXPLORE THE ROOM
+            </div>
+            <div class="t1">
+                Carefully
+            </div>
+            <div class="t2">
+               considered
+            </div>
+            <div class="t3">
+                amenities
+            </div>
+            <div class="t4">
+               <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi quibusdam obcaecati, dolor nemo blanditiis labore enim ab eius unde dolores praesentium reprehenderit ipsa corrupti, odio, modi consectetur. Facilis, eum accusamus?</p>
+            </div>
+            
+        
+          
+        </div>
+
+        <div class="col2">
+
+            <img src="../hotel.webp" alt="hotel" style="width: 100%">
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            
+
+            
+            <img src="../white.webp" alt="white" style="width:100% ;">
+            
+        </div>
+        <div class="column">
+            
+            <img src="../black.webp" alt="black" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="../white.webp" alt="white" style="width: 100%;">
+        </div>
+
+
+
+
+
+
+    </div>
+
+    
+
+    
+
+
+
+
+
+
+
+    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
